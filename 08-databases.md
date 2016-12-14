@@ -34,27 +34,9 @@ ensure that:
 - A user exists with the specified name
 - The user can access the specified database with the specified password
 
-In the web console in your `userXX-mlbparks` project, again click the *"Add to
-Project"* button, and then find the `mongodb-ephemeral` template, and click it.
-
-Your view on the next page is slightly different than before. Since this
-template requires several environment variables, they are predominantly
-displayed:
-
-![MongoDB](http://training.runcloudrun.com/images/roadshow/mongodb-template.png)
-
-You can see that some of the fields say *"generated if empty"*. This is a
-feature of *Templates* in OpenShift that will be covered in the next lab. For
-now, let's use the following values:
-
-* `MONGODB_USER` : `mlbparks`
-* `MONGODB_PASSWORD` : `mlbparks`
-* `MONGODB_DATABASE`: `mlbparks`
-* `MONGODB_ADMIN_PASSWORD` : `mlbparks`
-
-You can leave the rest of the values as their defaults, and then click
-*"Create"*. Then click *Continue to overview*. The MongoDB instance should
-quickly be deployed.
+```
+	$ oc new-app -e MONGODB_USER=mlbparks,MONGODB_PASSWORD=mlbparks,MONGODB_DATABASE=mlbparks,MONGODB_ADMIN_PASSWORD=mlbparks registry.access.redhat.com/rhscl/mongodb-26-rhel7 --name=mongodb
+```
 
 ###**Wiring the JBoss EAP pod(s) to communicate with our MongoDB database**
 
