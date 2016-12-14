@@ -19,9 +19,9 @@ from any directory on the command line.
 The first thing we want to do is download the correct executable for your
 operating system as linked below:
 
-- [Microsoft Windows](http://repo.openshift3roadshow.com/clients/oc-windows.zip)
-- [Apple OS X](http://repo.openshift3roadshow.com/clients/oc-macosx.tar.gz)
-- [Linux](http://repo.openshift3roadshow.com/clients/oc-linux.tar.gz)
+- [Microsoft Windows](https://access.redhat.com/downloads/content/290/ver=3.3/rhel---7/3.3.1.7/x86_64/product-software)
+- [Apple OS X](https://access.redhat.com/downloads/content/290/ver=3.3/rhel---7/3.3.1.7/x86_64/product-software)
+- [Linux](https://access.redhat.com/downloads/content/290/ver=3.3/rhel---7/3.3.1.7/x86_64/product-software)
 
 
 Once the file has been downloaded, you will need to extract the contents as it
