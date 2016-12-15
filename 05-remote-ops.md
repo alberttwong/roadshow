@@ -23,7 +23,7 @@ You should an output similar to the following:
 
 Now you can establish a remote shell session into the pod by using the pod name:
 
-  	$ oc rsh guestbook-1-oc7ey /bib/sh
+  	$ oc rsh guestbook-1-oc7ey /bin/sh
 
 You would see the following output:
     [demo@openshift ~]$ oc rsh guestbook-1-oc7ey /bin/sh
